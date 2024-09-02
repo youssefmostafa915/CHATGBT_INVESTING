@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  background-color: #adddff;
+}
+
+.left input {
+  display: flex;
+  margin: 10px;
+  margin-top: 45px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 221px;
+}
+
+.left hr {
+  margin-top: 10%;
+  height: 2px;
+  width: 90%;
+  background-color: #2691d9;
+  border: none;
+}
+
+.left h2 {
+  margin-top: 10%;
+  margin-left: 15%;
+  width: 65%;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f27216;
+  color: #07377b;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.left h3 {
+  margin-left: 17%;
+  margin-top: 10%;
+  color: #07377b;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.right img {
+  display: inline-block;
+  margin-left: 30%;
+  margin-right: auto;
+  width: 25%;
+  height: 40%;
+}
+.right h2 {
+  width: 17%;
+  height: 16%;
+  flex-shrink: 0;
+  display: inline-block;
+  color: #07377b;
+  justify-content: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #f60;
+  margin-left: 20%;
+}
+
+.right label {
+  color: #07377b;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.right form {
+  padding: 380px 50px 90px 110px;
+}
+
+.text_field input {
+  width: 90%;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--color-neutrals-light-grey-300, #d0d5dd);
+  background: var(--color-neutrals-light-grey-200, #eaecf0);
+  color: #e49d5b;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.pass {
+  display: block;
+}
+.pass label {
+  /*text-align: left;*/
+  margin-top: 2px;
+  margin-bottom: 7px;
+}
+.pass input {
+  margin-top: 3px;
+  margin-bottom: 7px;
+}
+input[type="submit"] {
+  width: 273px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f27216;
+}
+
+input[type="submit"] :hover {
+  border-color: #2691d9;
+  transition: 0.5s;
+}
+
+.done-container {
+  padding-left: 650px;
+}
+.done-container img {
+  padding-top: 200px;
+  margin-left: 50px;
+}
+
+.done-container h1 {
+  color: #07377b;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#chat-button {
+  width: 63%;
+  height: 10%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background: #f27216;
+  border-radius: 10px;
+  border-color: #f27216;
+  margin-top: 10%;
+  margin-left: 20%;
+  flex-shrink: 0;
+}
+
+#chat-arrow {
+  width: 6%;
+  height: 6%;
+  position: absolute;
+  margin-top: 11.5%;
+  margin-left: 75%;
+}
+
+.logout {
+  color: #07377b;
+}
+.logout button {
+  width: 30%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: #f4f2f0;
+  border-radius: 12px;
+  border: #eaecf0;
+  margin-left: 55%;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.logout img {
+  position: relative;
+  margin-top: 30%;
+  left: 65%;
+}
+
+.edit {
+  color: #07377b;
+}
+.edit button {
+  width: 30%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 55%;
+  gap: 4px;
+  background: #f4f2f0;
+  border-radius: 12px;
+  border: #eaecf0;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.edit img {
+  position: relative;
+  margin-top: 10%;
+
+  left: 65%;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding-top: 17px;
+  padding-left: 77%;
+  color: #e49d5b;
+  min-width: 50px;
+  text-align: center;
+}
+
+#profile-picture {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  margin-left: 89%;
+  margin-top: 2%;
+  border-radius: 40px;
+  border: solid 2px whitesmoke;
+}

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat</title>
+    <link rel="stylesheet" href="{% static 'css/chat.css' %}" />
+  </head>
+  <body>
+    <div class="chat">
+      <form method="post" id="form1">
+        {% csrf_token %}
+
+        <div class="chat-header">
+          <img src="{% static 'imgs/stock.png'%}" alt="stock market photo" />
+          <label> InvestChatPros</label>
+        </div>
+
+        <hr />
+        <div id="chat-answer">
+          <p>welcome to invest chat pro how can i help you ?</p>
+        </div>
+
+        {% block content%} {% if message%}
+        <p>{{message}}</p>
+        {% endif %} {% if response%}
+        <p>{{response}}</p>
+        {% endif %} {% endblock %}
+
+        <div class="chat-input">
+          <hr />
+
+          <div class="text_field">
+            <input type="text" required name="message" id="chat-value" />
+
+            <button type="submit" id="send-m">
+              <img src="{% static 'imgs/send.png'%}" alt="send-icon" />
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

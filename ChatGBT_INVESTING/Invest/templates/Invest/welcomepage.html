@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>welcome</title>
+    <link rel="stylesheet" href="{% static 'css/welcome.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div>
+          <h1>Welcome to InvestChatPro</h1>
+        </div>
+
+        <div class="bs">
+          <a href="{% url 'join'  %}">
+            <button type="button" id="Join">Join us</button>
+          </a>
+
+          <a href="{% url 'learn'  %}">
+            <button type="button" id="learn">Learn more</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="right">
+        <img
+          src="{% static 'imgs/shine-young-man-works-as-a-programmer-remotely-from-home-1 1.png' %}"
+          alt="a photo for a login"
+        />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: #adddff;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: #adddff;
+}
+
+.right form {
+  margin-top: 12%;
+  margin-left: 10%;
+  padding: 10% 1.5% 5% 3.5%;
+  background-color: white;
+  width: 70%;
+  height: 50%;
+  border-radius: 30px;
+  flex-shrink: 0;
+  box-shadow: 0px 3px 45px 0px rgba(241, 226, 255, 0.25);
+}
+.right label {
+  color: #07377b;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 5%;
+}
+
+.delete-page {
+  background-color: #adddff;
+}
+.confirm-delete form {
+  margin-top: 10%;
+  margin-left: 35%;
+  padding: 8% 1.5% 5% 3.5%;
+  background-color: white;
+  width: 30%;
+  height: 50%;
+  border-radius: 30px;
+  flex-shrink: 0;
+  box-shadow: 0px 3px 45px 0px rgba(241, 226, 255, 0.25);
+}
+.confirm-delete button {
+  width: 25%;
+  height: 67px;
+  margin-top: 10%;
+  margin-left: 35%;
+  text-decoration: none;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border-color: #f27216;
+  background: var(--color-primary-orange, #ff7900);
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+}
+.confirm-delete label {
+  margin-bottom: 10%;
+  margin-top: 5%;
+  color: #07377b;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.confirm-delete input[type="submit"] {
+  width: 90%;
+  height: 67px;
+  margin-top: 10%;
+  text-decoration: none;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border-color: #f27216;
+  background: var(--color-primary-orange, #ff7900);
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+}
+
+.right button {
+  width: 25%;
+  height: 67px;
+  margin-top: 10%;
+  margin-left: 35%;
+  text-decoration: none;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border-color: #f27216;
+  background: var(--color-primary-orange, #ff7900);
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+}
+.text_field input {
+  width: 90%;
+  height: 50px;
+  margin-bottom: 6%;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid var(--color-neutrals-light-grey-300, #d0d5dd);
+  background: var(--color-neutrals-light-grey-200, #eaecf0);
+  color: #e49d5b;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input[type="submit"] {
+  width: 90%;
+  height: 15%;
+  margin-top: 5%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f27216;
+}
+
+input[type="submit"] :hover {
+  border-color: #2691d9;
+  transition: 0.5s;
+  text-decoration: #07377b;
+  text-decoration-color: #07377b;
+}
+
+.Delete button {
+  width: 30%;
+  height: 67px;
+  margin-top: 7%;
+  margin-left: 25%;
+  text-decoration: none;
+  text-align: right;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border-color: #f27216;
+  background: var(--color-primary-orange, #ff7900);
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+}
+
+.Delete img {
+  left: 32%;
+  size: 80%;
+  bottom: 5%;
+  position: relative;
+}
+
+.upload-profile-picture {
+  display: flex;
+}
+
+.upload-profile-picture img {
+  width: 45%;
+  margin-left: 35%;
+  margin-top: 25%;
+  border-radius: 400px;
+}
+
+.upload {
+  display: flex;
+  width: 70%;
+
+  margin-top: 6%;
+  margin-left: 2%;
+}
+
+.upload img {
+  width: 100%;
+  border-radius: 50%;
+  border: 6px solid #eaeaea;
+}
+
+.upload .round {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  background: #00b4ff;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.upload .round input[type="file"] {
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+#upload-image-button {
+  width: 25%;
+  height: 30%;
+  margin-top: 50%;
+  text-decoration: none;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border-color: #f27216;
+  background: var(--color-primary-orange, #ff7900);
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+}

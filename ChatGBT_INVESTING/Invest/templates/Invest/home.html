@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="right">
+
+         {% block content%}
+
+        {% if profile.profile_image%}
+          <img  src="{{profile.profile_image.url}}" alt="profile-icon"  id = "profile-picture">
+      
+        {%  endif %}
+        {%  endblock   %}
+        <img
+          src="{% static 'imgs/favpng_electrical-network-electronic-circuit-printed-circuit-board-electrical-engineering-removebg-preview 2.png' %}"
+          alt=" electrical network"
+        />
+        <div id="suggestion">
+
+        <h2>suggestion 1</h2>
+        <h2>suggestion 2</h2>
+        <h2>suggestion 3</h2>
+        <h2>suggestion 4</h2>
+
+        </div>
+       
+        <div class = "chat">
+
+          <a href="{% url 'chat' %}">  <button type="button" id="chat-button">Start Chat</button></a>
+         
+        <img src="{% static 'imgs/Arrow.png' %}" id="chat-arrow" alt="arrow " >
+        </div>        
+      </div>
+
+      <div class="left">
+        <div class="input-icons">
+          <i class="fa fa-search icon"> </i>
+          <div class="text_field" placeholder="search">
+            <input type="text" required name="email" />
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Yestrday</h2>
+        <h3>Company 1</h3>
+        <h3>Company 2</h3>
+
+        <h2>Prvious Week</h2>
+
+        <h3>Company 1</h3>
+        <h3>Company 2</h3>
+
+        
+         
+          <div class="logout">
+            <a href="{% url 'logout' %}">
+
+ <img src="{% static 'imgs/logout 1.png' %}" alt="logout photo">
+            <button type="button">Log out </button>
+            </a>
+           
+          </div>
+          
+            <div class="edit">
+           
+             <a href="{% url 'edit' %}">
+            <img src="{% static 'imgs/edit.png' %}" alt="logout photo">
+            <button type="button">Edit </button>
+          </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
